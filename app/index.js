@@ -71,7 +71,7 @@ module.exports = yeoman.generators.Base.extend({
       var features = answers.features;
 
       var hasFeature = function (feature) {
-        return feature.indexOf(feature) !== -1;
+        return features.indexOf(feature) !== -1;
       };
 
       this.includeSass = hasFeature('includeSass');

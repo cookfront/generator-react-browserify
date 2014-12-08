@@ -102,7 +102,7 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
-gulp.task('connect',<% if (includeSass) { %> ['styles'],<% } %> function () {
+gulp.task('connect',<% if (includeSass) { %> ['styles'<% } %>, 'scripts'] function () {
   var serveStatic = require('serve-static');
   var serveIndex = require('serve-index');
   var app = require('connect')()

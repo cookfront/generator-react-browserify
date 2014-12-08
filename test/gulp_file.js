@@ -72,11 +72,11 @@ describe('Gulp Webapp generator: tasks', function () {
   });
 
   it('should contain jade task', function (done) {
-    assertTaskExists(this.webapp, 'jade', [], done);
+    assertTaskExists(this.webapp, 'jade', ['includeJade'], done);
   });
 
   it('should contain jest task', function (done) {
-    assertTaskExists(this.webapp, 'jest', [], done);
+    assertTaskExists(this.webapp, 'jest', ['includeJest'], done);
   });
 
   it('should contain extras task', function (done) {

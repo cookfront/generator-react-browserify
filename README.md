@@ -1,4 +1,4 @@
-# React App generator
+# React App generator [![build status](https://travis-ci.org/cookfront/generator-react-browserify.svg)](https://travis-ci.org/cookfront/generator-react-browserify)
 
 ![generator](http://cookfront.qiniudn.com/generator.png)
 

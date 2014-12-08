@@ -1,0 +1,8 @@
+.npmignore
+.editorconfig
+.travis.yml
+.jshintrc
+.gitattributes
+Makefile
+test
+coverage

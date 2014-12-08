@@ -1,0 +1,6 @@
+node_modules
+coverage
+test/gulp-file
+test/sass
+test/slug
+test/temp

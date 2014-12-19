@@ -18,6 +18,7 @@
  - Install: `npm install -g generator-react-browserify`
  - Run: `yo react-browserify`
  - Serve: `gulp serve`
+ - Test: `gulp jest`
  - Build: `gulp build`
 
 ## Options

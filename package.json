@@ -1,6 +1,6 @@
 {
   "name": "generator-react-browserify",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "repository": "cookfront/generator-react-browserify",
   "description": "Scaffold out a react web app with browserify and gulp",
   "main": "app/index.js",

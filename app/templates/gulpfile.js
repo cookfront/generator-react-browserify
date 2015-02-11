@@ -24,7 +24,7 @@ gulp.task('styles', function () {<% if (includeSass) { %>
 
 gulp.task('jshint', function () {
   return gulp.src(['./app/scripts/*.js', './app/scripts/*.jsx'])
-    .pipe($.jsxtransform())
+    .pipe($.react())
     .pipe($.jshint())
     .pipe($.jshint.reporter('jshint-stylish'))
     .pipe($.jshint.reporter('fail'));

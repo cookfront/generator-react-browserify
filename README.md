@@ -12,6 +12,7 @@
 * Automagically wire-up dependencies installed with [Bower](http://bower.io) *(when `gulp watch` or `gulp wiredep`)*
 * Automagically browserify js file
 * React Router
+* ES6 support
 
 ## Getting Started
 
@@ -26,3 +27,7 @@
  - `--skip-install` Skips the automatic execution of bower and npm after scaffolding has finished.
  - `--skip-welcome-message` Skips the yeoman welcome message.
  - `skip-install-message` Skips the message after the installation of dependencies.
+
+## TODO
+
+ - eslint/jsx

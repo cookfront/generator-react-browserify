@@ -6,7 +6,7 @@ ISTANBUL = ./node_modules/.bin/istanbul
 MOCHA = ./node_modules/.bin/_mocha
 
 install-test:
-	@NODE_ENV=test npm install --registry=http://r.cnpmjs.org
+	@NODE_ENV=test npm install
 
 test: install-test
 	@NODE_ENV=test $(MOCHA) \

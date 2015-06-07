@@ -1,14 +1,12 @@
-/** @jsx React.DOM */
-var React = window.React = require('react');
+import React from 'react';
 
-var Hello = React.createClass({
-  displayName: 'Hello',
-  render: function () {
+class Hello extends React.Component {
+  render() {
     return (
       <div>Hello</div>
     );
   }
-});
+}
 
 React.render(
   <Hello />,

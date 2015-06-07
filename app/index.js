@@ -3,7 +3,6 @@ var fs = require('fs');
 var path = require('path');
 var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
-var wiredep = require('wiredep');
 var chalk = require('chalk');
 
 module.exports = yeoman.generators.Base.extend({
@@ -211,28 +210,6 @@ module.exports = yeoman.generators.Base.extend({
       skipMessage: this.options['skip-install-message'],
       skipInstall: this.options['skip-install']
     });
-
-    this.on('end', function () {
-      var bowerJson = this.dest.readJSON('bower.json');
-
-      // wire Bower packages to .html
-      wiredep({
-        bowerJson: bowerJson,
-        directory: 'bower_components',
-        exclude: ['bootstrap-sass', 'bootstrap.js'],
-        src: 'app/index.html'
-      });
-
-      if (this.includeSass) {
-        // wire Bower packages to .scss
-        wiredep({
-          bowerJson: bowerJson,
-          directory: 'bower_components',
-          src: 'app/styles/*.scss'
-        });
-      }
-
-    }.bind(this));
   },
 
 });

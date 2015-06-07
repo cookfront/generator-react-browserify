@@ -2,11 +2,10 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-
+var del = require('del');
 <% if (includeJest) { %>
 var path = require('path');
 <% } %>
-
 var source = require('vinyl-source-stream');
 
 // styles task
@@ -51,14 +50,15 @@ gulp.task('fonts', ['clean'], function () {
 });
 
 <% if (includeJade) { %>
+// jade task
 gulp.task('jade', function () {
   return gulp.src('app/template/*.jade')
     .pipe($.jade({ pretty: true }))
     .pipe(gulp.dest('public/html'));
 });
 <% } %>
-
 <% if (includeJest) { %>
+// jest task
 gulp.task('jest', function () {
   var nodeModules = path.resolve('./node_modules');
   return gulp.src('app/scripts/**/__tests__')
